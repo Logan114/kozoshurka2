@@ -1,11 +1,13 @@
-import React from 'react'
-import Termek from './Termek'
+import React from 'react';
+import Termek from './Termek';
 
-
-export default function TablazatSor(props) {
+export default function TablazatSor({ jel, index }) {
   return (
-    <div>
-        <Termek/>
-    </div>
-  )
+    <tr>
+      <td>{index + 1}</td>
+      <td>
+        <Termek jel={jel} />
+      </td>
+    </tr>
+  );
 }
